@@ -18,8 +18,8 @@ A simple React application for tracking day-to-day expenses and cash flow, devel
 
 ## Mock Login Credentials
 
-- Email: user@example.com
-- Password: password123
+- Username: miew
+- Password: 123456
 
 ## Getting Started
 
