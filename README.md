@@ -14,6 +14,7 @@ A simple React application for tracking day-to-day expenses and cash flow, devel
 
 - React
 - SCSS
+- Framer Motion
 
 ## Mock Login Credentials
 
