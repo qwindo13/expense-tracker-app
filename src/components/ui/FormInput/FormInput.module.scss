@@ -1,0 +1,12 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+        font-weight: 500;
+        opacity: 0.5;
+        font-size: 0.875rem;
+    }
+
+}

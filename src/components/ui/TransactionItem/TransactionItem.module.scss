@@ -1,0 +1,73 @@
+@import '../../../styles/variables.scss';
+
+.transactionItem {
+    display: flex;
+    width: -webkit-fill-available;;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $background-color;
+    @media (max-width: $breakpoint-small) {
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+    }
+  
+    .itemLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .itemIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1/1;
+      @media (max-width: $breakpoint-small) {
+        display: none;
+      }
+    }
+  
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+  
+      h5 {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+  
+      p {
+        font-size: 0.875rem;
+        font-weight: 500;
+        opacity: 0.5;
+      }
+    }
+  
+    .itemDate {
+      p {
+        font-weight: 500;
+      }
+     @media (max-width: $breakpoint-small) {
+      display: none;
+     }  
+    }
+  
+    .itemAmount {
+      width: 100%;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      justify-self: center;
+    }
+  
+    .itemEdit {
+      cursor: pointer;
+      justify-self: flex-end;
+  
+    }
+}

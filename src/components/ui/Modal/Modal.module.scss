@@ -1,0 +1,65 @@
+@import "../../../styles/variables.scss";
+
+.modal {
+    position: relative;
+    background-color: $background-color;
+    padding: 2rem;
+    border-radius: $border-radius;
+    z-index: 1000;
+    min-width: 800px;
+    max-width: 48rem;
+
+    @media (max-width: $breakpoint-small) {
+        top: auto;
+        bottom: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        min-width: 0;
+        max-width: 100%;
+        transform: none;
+        width: 100%;
+        border-radius: $border-radius $border-radius 0 0;
+    }
+
+    .modalContent {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .modalContentHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .modalTitle {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            .modalDescription {
+                font-weight: 500;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+
+    @media (max-width: $breakpoint-small) {
+        align-items: end;
+    }
+}
